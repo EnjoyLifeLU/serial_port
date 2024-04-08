@@ -7,7 +7,8 @@
 typedef unsigned char BYTE;
 
 /** Serial port config param. */
-struct SerialPortConfig {
+struct SerialPortConfig
+{
     int baudrate;   // read speed
     int databits;   // one of 7,8
     int stopbits;   // one of 1,2
@@ -15,7 +16,8 @@ struct SerialPortConfig {
 };
 
 /** Serial port device class. */
-class SerialPort {
+class SerialPort
+{
 private:
     HANDLE hSerial;  // serial port handle
     bool isClose;    // is serial port closed
